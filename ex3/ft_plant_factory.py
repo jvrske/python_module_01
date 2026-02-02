@@ -1,17 +1,17 @@
 class Plant:
-    def __init__(self, name, height, age):
+    def __init__(self, name: str, height: int, age: int) -> None:
         self.name = name
         self.height = height
         self.age = age
         print(f"Created: {self.name} ({self.height}cm, {self.age} days)")
 
-    def create_all(plant_templates):
+    def create_all(plant_templates) -> list:
         plants = []
         for name, height, age in plant_templates:
             plants.append(Plant(name, height, age))
         return plants
 
-    def get_info(self):
+    def get_info(self) -> None:
         print(f"{self.name} ({self.height}cm, {self.age} days)")
 
 
