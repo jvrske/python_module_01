@@ -37,6 +37,7 @@ class Vegetable(Plant):
 
 if __name__ == "__main__":
     print("=== Garden Plant Types ===")
+
     rose = Flower("Rose", 25, 30, "red color")
     print(f"{rose.name} ({rose.__class__.__name__}): {rose.height}cm, \
 {rose.age} days, {rose.color}")
